@@ -2,7 +2,7 @@ package lesson2;
 
 import java.util.Arrays;
 
-public class MainClass {
+public class MainClass2 {
 
     public static void main(String[] args) {
 
