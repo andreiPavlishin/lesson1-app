@@ -1,20 +1,23 @@
 package lesson6;
 
+import lesson6.Animal.Animal;
 import lesson6.Animal.Cat;
 import lesson6.Animal.Dog;
 
 public class MainClass6 {
     public static void main(String[] args) {
 
-            Cat cat = new Cat( );
-            cat.run(201);
-            cat.swim(1);
-            cat.jump(1.9);
+        Animal animal = new Animal("CatsCategory");
+        Cat cat = new Cat("Barsik", 200, false, 2);
+        animal.animalInfo();
+        cat.animalInfo();
+        cat.catInfo();
 
-            Dog dog = new Dog();
-            dog.run(500);
-            dog.swim(10);
-            dog.jump(0.4);
+        Animal danimal = new Animal("Dogs");
+        Dog dog = new Dog("Sharik", 500, 10, 0.5);
+        danimal.animalInfo();
+        dog.animalInfo();
+        dog.dogInfo();
 
     }
 }
