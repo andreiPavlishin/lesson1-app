@@ -1,13 +1,18 @@
 package lesson6.Animal;
 
-public abstract class Animal {
-    private final int MAX_RUN_LENGTH = 0;
-    private final int MAX_SWIM_LENGTH = 0;
-    private final double MAX_JUMP_HEIGTH = 0;
+public class Animal {
+    public String name;
+    public int run;
 
-    public abstract void run(int length);
+    public Animal() {
+    }
 
-    public abstract void swim(int length);
+    public Animal(String name) {
+        this.name = name;
+    }
 
-    public abstract void jump(double height);
+    public void animalInfo() {
+        System.out.println();
+
+    }
 }

@@ -1,33 +1,25 @@
 package lesson6.Animal;
 
-import lesson6.Animal.Animal;
-
 public class Cat extends Animal {
-    private final int MAX_RUN_LENGTH = 200;
-    private final double MAX_JUMP_HEIGTH = 2;
 
-    public Cat(String barsik, int i, int i1, double v) {
-        super();
+    protected boolean sweem;
+    int jump;
+
+
+
+    public Cat(String name, int run, boolean sweem, int jump) {
+        this.name = name;
+        this.run = run;
+        this.sweem = sweem;
+        this.jump = jump;
     }
 
-    public Cat() {
-
+    public Cat(String matroskin, int i) {
     }
 
-    @Override
-    public void run(int length) {
-        if ((length >= 0) && (length <= MAX_RUN_LENGTH)) System.out.println("run: true");
-        else System.out.println("run: false");
+    //выводим информацию в консоль
+    public void catInfo() {
+        System.out.println("CatName: " + name + " RunLimit: " + run+ " meters/" + " Sweem:" + sweem + " Jump: " +jump+ " meters/");
     }
 
-    @Override
-    public void swim(int length) {
-        System.out.println("swim: false");
-    }
-
-    @Override
-    public void jump(double height) {
-        if ((height >= 0) && (height <= MAX_JUMP_HEIGTH)) System.out.println("jump: true");
-        else System.out.println("jump: false");
-    }
 }
